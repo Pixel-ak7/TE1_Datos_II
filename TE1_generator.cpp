@@ -7,9 +7,8 @@
 // con números aleatorios. El tamaño del archivo se especifica
 // en el argumento fileSize.
 void generateFile(const std::string& outputPath, size_t fileSize) {
-    std::ofstream outFile(outputPath, std::ios::binary)
+    std::ofstream outFile(outputPath, std::ios::binary);
     if (!outFile) {
-        
         std::cerr << "Error opening output file: " << outputPath << std::endl;
         return;
     }
